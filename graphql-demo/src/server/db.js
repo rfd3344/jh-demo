@@ -1,28 +1,28 @@
 const students = [
   {
     id: 1,
-    name: "小明",
+    name: "a",
     age: 27,
     sex: true,
     grade: 78
   },
   {
     id: 2,
-    name: "小红",
+    name: "bbb",
     age: 25,
     sex: false,
     grade: 80
   },
   {
     id: 3,
-    name: "小方",
+    name: "ccc",
     age: 28,
     sex: false,
     grade: 98
 	},
 	{
       id: 4,
-      name: "小方",
+      name: "ddd",
       age: 28,
       sex: false,
       grade: 98
