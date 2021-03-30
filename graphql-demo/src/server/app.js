@@ -33,10 +33,10 @@ const resolvers = {
     // 第二个参数为查询集传的参数
     // 第三个参数是在初始化 ApolloServer 时注入的对象
     postPhoto: async (parent, args, { pubsub }) => {
-		console.warn('rfd ',parent, args, { pubsub })
+		console.warn('rfd ',args.input, args.input.url)
       await Promise.resolve();
       pubsub.publish("photo-add", { newPhoto: photos[0] });
-      return photos[0];
+      return photos[1];
     }
   },
   Subscription: {
