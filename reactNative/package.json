@@ -1,0 +1,31 @@
+{
+	"name": "jh-reactNative",
+	"version": "0.1.0",
+	"license": "UNLICENSED",
+	"description": "Template for jh-reactNative",
+	"author": "Eric Li <rfd3344@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rfd3344/jh-reactNative.git"
+	},
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"eject": "expo eject",
+		"demo": ""
+	},
+	"dependencies": {
+		"expo": "^35.0.0",
+		"react": "16.8.3",
+		"react-dom": "16.8.3",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+		"react-native-web": "^0.11.7"
+	},
+	"devDependencies": {
+		"expo-cli": "^3.4.1",
+		"supervisor": "^0.12.0"
+	}
+}

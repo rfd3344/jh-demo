@@ -1,0 +1,19 @@
+{
+  "name": "jh-desktop",
+  "version": "0.1.0",
+  "description": "A minimal application",
+  "main": "main/main.js",
+  "license": "CC0-1.0",
+  "author": "GitHub",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm run win && npm run mac",
+    "win": "electron-packager ./ --platform=win32",
+    "mac": "electron-packager ./ --platform=mas --overwrite"
+  },
+  "repository": "https://github.com/rfd3344/jh-electron",
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-packager": "^14.0.6"
+  }
+}
