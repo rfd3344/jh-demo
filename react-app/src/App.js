@@ -1,4 +1,4 @@
-import Test from './Test';
+import DemoComponent from './demoComponent/DemoComponent';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
           Learn React
-		  <Test />
+		  <DemoComponent />
     </div>
   );
 }

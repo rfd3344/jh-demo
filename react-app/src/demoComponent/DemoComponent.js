@@ -15,12 +15,8 @@ export default function App() {
 
   return (
     <div>
-      <div>
-        <Button onClickButton={handleClickButton1}>Button1</Button>
-      </div>
-      <div>
-        <Button onClickButton={handleClickButton2}>Button2</Button>
-      </div>
+        <Button key="1" onClickButton={handleClickButton1}>Button1</Button>
+        <Button key="2" onClickButton={handleClickButton2}>Button2</Button>
     </div>
   );
 }
