@@ -1,45 +1,41 @@
-# 内置标量类型：Int、Float、String、Boolean、ID
+# types：Int、Float、String、Boolean、ID
 
-# 自定义标量类型
 type Student {
-  name: String
-  age: Int
-  sex: Boolean
-  grade:Int
-  isGood:Boolean
+	id: String!
+	name: String!
+	age: Int
+	sex: Boolean
+	grade:Int
+	isGood:Boolean
 }
 
-# 自定义标量类型
 type Photo {
-    url:String
-    size:Int
-    type:PhotoType
-    postedBy:Student
+	id: String!
+	url: String!
+	size: Int
+	type: PhotoType
+	postedBy: Student
 }
 
-# 枚举类型
 enum PhotoType {
-    SELFLE # 自拍类型
-    ACTION # 动作类型
+	SELFLE
+	ACTION
 }
 
-# 查询类型
+
 type Query {
-    allStudents(id:Int):[Student]
-    allPhotos:[Photo]
+	allStudents(id:Int):[Student]
+	allPhotos:[Photo]
 }
 
-# 变更类型
 type Mutation {
     postPhoto(input: PostPhotoInput): Photo
 }
 
-# 输入类型
 input PostPhotoInput {
     url:String
 }
 
-# 订阅类型
 type Subscription {
     newPhoto:Photo
 }
