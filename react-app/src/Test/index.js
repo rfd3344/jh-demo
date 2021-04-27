@@ -1,11 +1,9 @@
+import React from 'react';
 
-
-function DemoComp() {
+export default function Test() {
   return (
     <div className="DemoComp">
       start
     </div>
   );
 }
-
-export default DemoComp;
