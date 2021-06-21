@@ -11,7 +11,7 @@
     "win": "electron-packager ./ --platform=win32",
     "mac": "electron-packager ./ --platform=mas --overwrite"
   },
-  "repository": "https://github.com/rfd3344/jh-electron",
+  "repository": "https://github.com/rfd3344/electronJH",
   "devDependencies": {
     "electron": "^7.0.0",
     "electron-packager": "^14.0.6"
